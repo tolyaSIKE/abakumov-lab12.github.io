@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абакумов Анатолій. ЛР№12</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Тест твоєї англійської мови</h1>
+    <div class="container">
+        <div class="difficulty">
+            <p>Рівень складності</p>
+            <label>
+                <input type="radio" name="difficulty" value="easy" checked> Початковий
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="medium"> Середній
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="hard"> Високий
+            </label>
+        </div>
+        <div class="card" id="word-card">
+            <p id="word"></p>
+        </div>
+        <input type="text" id="message" placeholder="Введіть переклад">
+        <button id="check-btn">Відповісти</button>
+        <div class="progress">
+            <p>Крок: <span id="step">1</span> з 10</span></p>
+        </div>
+        <div class="stats">
+            <p>Правильно: <span id="true">0</span></p>
+            <p>Неправильно: <span id="false">0</span></p>
+            <div id="result-card" class="hidden">
+                <div class="result-content">
+                    <p id="result"></p>
+                    <button id="restart-btn">Повторно спробувати</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
